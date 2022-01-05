@@ -26,19 +26,34 @@
             </div>
         </div>
         <div class="history">
-        <h2>history</h2>
-        <hr>
-        <ul class="transaction-list">
-            <li>
-                <span>cash</span>
-                <span>500</span>
-            </li>
-            <li>
-                <span>cash</span>
-                <span>500</span>
-            </li>
-        </ul>
-    </div>
+            <h2>history</h2>
+            <hr>
+            <ul class="transaction-list">
+                <li>
+                    <span>cash</span>
+                    <span>500</span>
+                </li>
+                <li>
+                    <span>cash</span>
+                    <span>500</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="add-transaction">
+            <h2>add new transaction</h2>
+            <hr>
+            <form>
+                <label>Text</label><br>
+                <input type="text" id="text" placeholder="Enter Text...">
+                <br>
+                <label>Amount <br>
+                    <span>(negative-expense, positive-income)</span>
+                </label><br>
+                <input type="number" id="text" placeholder="Enter Amount...">
+                <input type="submit" id="addBtn" value="Add Transaction">
+            </form>
+        </div>
     </div>
     <script src="expense.js"></script>
 </body>

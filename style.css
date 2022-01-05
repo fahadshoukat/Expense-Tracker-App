@@ -49,7 +49,7 @@
     margin: 10px 50px;
 }
 
-.history hr {
+hr {
     margin: 10px 0;
 }
 
@@ -64,4 +64,23 @@
     background-color: white;
     box-shadow: 0 0 10px gray;
     margin-top: 5px;
+}
+
+.add-transaction {
+    margin: 10px 50px;
+    text-transform: capitalize;
+}
+
+input {
+    width: 100%;
+    padding: 5px 0;
+    margin: 5px 0;
+}
+
+#addBtn {
+    background-color: #9C88FF;
+    border: none;
+    padding: 10px 0;
+    font-size: large;
+    font-weight: bold;
 }
