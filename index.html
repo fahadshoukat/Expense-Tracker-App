@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Expense Tracker App</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <h1 class="main-heading">expense tracker</h1>
@@ -15,15 +17,30 @@
         <div class="income-expense">
             <div>
                 <h2>income</h2>
-                <h2>0.00</h2>
+                <h2 class="green">0.00</h2>
             </div>
             <hr>
             <div>
                 <h2>expense</h2>
-                <h2>0.00</h2>
+                <h2 class="red">0.00</h2>
             </div>
         </div>
+        <div class="history">
+        <h2>history</h2>
+        <hr>
+        <ul class="transaction-list">
+            <li>
+                <span>cash</span>
+                <span>500</span>
+            </li>
+            <li>
+                <span>cash</span>
+                <span>500</span>
+            </li>
+        </ul>
+    </div>
     </div>
     <script src="expense.js"></script>
 </body>
+
 </html>

@@ -10,14 +10,14 @@
     max-width: 500px;
     width: 90%;
     border: 1px solid magenta;
-    margin: 3rem auto;
+    margin: 2rem auto;
     background-color: #F7F7F7;
 }
 
 .main-heading {
     color: mediumblue;
     text-transform: capitalize;
-    margin: 30px 50px;
+    margin: 20px 50px;
 }
 
 .balance {
@@ -36,3 +36,32 @@
     box-shadow: 0 0 10px gray;
 }
 
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.history {
+    text-transform: capitalize;
+    margin: 10px 50px;
+}
+
+.history hr {
+    margin: 10px 0;
+}
+
+.transaction-list {
+    list-style: none;
+}
+
+.transaction-list > li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 5px;
+    background-color: white;
+    box-shadow: 0 0 10px gray;
+    margin-top: 5px;
+}
