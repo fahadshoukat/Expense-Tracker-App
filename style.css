@@ -1,0 +1,38 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 500px;
+    width: 90%;
+    border: 1px solid magenta;
+    margin: 3rem auto;
+    background-color: #F7F7F7;
+}
+
+.main-heading {
+    color: mediumblue;
+    text-transform: capitalize;
+    margin: 30px 50px;
+}
+
+.balance {
+    margin: 0 50px;
+    text-transform: uppercase;
+}
+
+.income-expense {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 50px;
+    background-color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 0 10px gray;
+}
+
