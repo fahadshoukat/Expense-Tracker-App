@@ -9,7 +9,7 @@ $("#addBtn").click(function (e) {
 
  $(".transaction-list").html(transactionItems.map((item) => {
      if(item.transactionAmount > 0){
-        $("li").
+        $("li").css({"border-right:"})
      }
     return `<li>
         <span>${item.transactionText}</span>
