@@ -86,14 +86,6 @@ input {
     font-weight: bold;
 }
 
-.green-border {
-    border-right: 4px solid green;
-}
-
-.red-border {
-    border-right: 4px solid red;
-}
-
 @media screen and (max-width: 425px) {
     .container {
         width: 100%;
