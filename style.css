@@ -56,6 +56,7 @@ hr {
 
 .transaction-list {
     list-style: none;
+    position: relative;
 }
 
 .transaction-list > li {
@@ -76,6 +77,21 @@ input {
     width: 100%;
     padding: 8px 0;
     margin: 10px 0;
+}
+
+.deleteBtn {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: red;
+    cursor: pointer;
+    position: absolute;
+    left: -20px;
+    visibility: hidden;
+}
+
+.transaction-list > li:hover .deleteBtn{
+    visibility: visible;
 }
 
 #addBtn {

@@ -27,17 +27,24 @@ $("#addBtn").click(function (e) {
   $(".green").html("$" + totalIncome + ".00");
   $(".red").html("$" + totalExpense + ".00");
 
-  $(".transaction-list").html(
-    transactionItems.map((item) => {
+  $('.transaction-list').html(() => {
+    let myHtml = ''
+    transactionItems.forEach((item) => {
       if (item.transactionAmount > 0) {
-        $("li").addClass("green-border");
+        myHtml += `<li class='green-border'>
+        <div class="deleteBtn">X</div>
+      <span>${item.transactionText}</span>
+      <span>$${item.transactionAmount}</span>
+  </li>`
       } else {
-        $("li").addClass("red-border");
-      }
-      return `<li>
+        myHtml += `<li class='red-border'>
+        <div class="deleteBtn">X</div>
         <span>${item.transactionText}</span>
         <span>$${item.transactionAmount}</span>
-    </li>`;
+    </li>`
+      }
     })
-  );
+    console.log(myHtml)
+    return myHtml
+  })
 });
