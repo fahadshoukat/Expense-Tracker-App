@@ -44,7 +44,12 @@ $("#addBtn").click(function (e) {
     </li>`
       }
     })
-    console.log(myHtml)
+   
     return myHtml
+    
   })
+
+  $('#text').val('');
+  $('#amount').val(null);
+
 });

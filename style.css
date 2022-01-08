@@ -85,6 +85,8 @@ input {
     text-align: center;
     background-color: red;
     cursor: pointer;
+    color: white;
+    font-size: large;
     position: absolute;
     left: -20px;
     visibility: hidden;
