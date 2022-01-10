@@ -54,7 +54,24 @@ function displayList() {
 }
 
 $(".transaction-list").click((e) => {
-  let removeItem = e.target.parentNode;
-  
+
+  let removeItem = myObj.transactionItems.findIndex((item) => {
+    if(item.transactionText === e.target.nextElementSibling.textContent){
+      return true;
+    }
+  })
+
   myObj.transactionItems.splice(removeItem, 1);
+  updateValue = e.target.nextElementSibling.nextElementSibling.textContent.slice(1);
+  
+  if(updateValue > 0) {
+    myObj.totalBalance = myObj.totalBalance - parseInt(updateValue);
+    myObj.totalIncome = myObj.totalIncome - parseInt(updateValue);
+  }else{
+    myObj.totalBalance = myObj.totalBalance - parseInt(updateValue);
+    myObj.totalExpense = myObj.totalExpense - parseInt(updateValue);
+  }
+
+  displayList();
+  
 });
