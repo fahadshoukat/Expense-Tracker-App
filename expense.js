@@ -11,6 +11,16 @@ $("#addBtn").click(function (e) {
   let transactionText = $("#text").val();
   let transactionAmount = $("#amount").val();
 
+  if (transactionAmount == 0){
+   alert("Please Enter Valid Amount");
+   return
+  }
+
+  if (transactionText == ""){
+   alert("Please Enter Valid Transaction Text");
+   return
+  }
+
   myObj.transactionItems.push({ transactionText, transactionAmount });
 
   if (transactionAmount > 0) {
